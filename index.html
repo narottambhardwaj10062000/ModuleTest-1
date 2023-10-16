@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- ------------------------------------------------------------------------------------------------------------ -->
+
+    <div class="upper">
+        <h1 class="rps">ROCK<br/>PAPER<br/>SCISSORS</h1>
+
+        <div class="scores">
+            <div class="compscore">
+                <p class="one">COMPUTER</p>
+                <p class="one">SCORE</p>
+                <h1 class="one" id="computer">0</h1>
+            </div>
+            <div class="yourscore">
+                <p class="one">YOUR</p>
+                <p class="one">SCORE</p>
+                <h1 class="one" id="your">0</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+
+    <div class="lower">
+        <div class="triangles">
+            <div class="triangle"></div>
+        
+            <div class="fist">
+                <img class="x" src="./Group 2 (2)-overlay.png" onclick="pickUserHand('rock')">
+            </div>
+
+            <div class="scis">
+                <img src="./Group 3-overlay.png" onclick="pickUserHand('scissor')">
+            </div>
+
+            <div class="palm">
+                <img src="./Group 1-overlay.png" onclick="pickUserHand('paper')">
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+    <div class="result">
+        <div class="userResult">
+            <h2>YOU PICKED</h2>
+            <div class="pickedImg">
+                <div class="pulse">
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+                </div>
+                <img id="pickedImage" src="Group 1-overlay.png">
+            </div>
+            
+        </div>
+
+        <div class="mainResult">
+            <h1>YOU WIN</h1>
+            <h3></h3>
+            <div class = "playAgain"onclick="again()">PLAY AGAIN</div>
+        </div>
+
+        <div class="computerResult">
+            <h2>PC PICKED</h2>
+            <div class="ComppickedImg">
+                <div class="pulse2">
+                    <div class="ring2"></div>
+                    <div class="ring2"></div>
+                    <div class="ring2"></div>
+                    <div class="ring2"></div>
+                </div>
+                <img id="CompImage" src="Group 2 (2)-overlay.png">
+            </div>
+        </div>
+
+        <div onclick = "replaybtn()" class="replay">
+            REPLAY
+        </div>
+    </div>
+
+    
+
+    <!-- --------------------------------------------------------------------------------------------------- -->
+
+    <div class="xyz">
+        <div class="logo">
+            <img id="one" src="./trophyVector.png" alt="photo"/>
+            <img id="two" src="./Star_1-removebg-preview.png" alt="photo"/>
+            <img id="three" src="./Star_1-removebg-preview.png" alt="photo"/>
+            <img id="four" src="./Star_1-removebg-preview.png" alt="photo"/>
+            <img id="five" src="./Star_1-removebg-preview.png" alt="photo"/>
+            <img id="six" src="./Star_1-removebg-preview.png" alt="photo"/>
+            <img id="seven" src="./Star_1-removebg-preview.png" alt="photo"/>
+            <img id="eight" src="./Star_1-removebg-preview.png" alt="photo"/>
+            <img id="nine" src="./Star_1-removebg-preview.png" alt="photo"/>
+        </div>
+        <div class="te">
+            <p id="first">HURRAY!!</p>
+        </div>
+        <div class="xt">
+            <p id="second">YOU WON THE GAME</p>
+        </div>
+        <button onclick="lastPlayAgain()" id="btm">PLAY AGAIN</button>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+
+    <div class = "RulesBtn">
+        <div class="ok">
+            <div class="op">
+                <div class="bek">
+                    <h3 id="hea">Game Rule</h3>
+                </div>
+                <div class="bek2">
+                    <ul>
+                        <li>
+                            Rock beats scissors,scissors beat paper,and paper,and paper beats rock. 
+                        </li>
+                        <li>
+                            Agree ahead of time whether you'll count off "rock,paper,scissors,shoot" or just "rock,paper,scissors." 
+                        </li>
+                        <li>
+                            Use rock,paper,scissors to settle minor decisions or simply play to pass the time.
+                        </li>
+                        <li>
+                            If both palyers lay down the same another hand.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="close">
+                <button id="clo" onclick="cut()">X</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottombtn">
+        <div class="rules" onclick="rulesBtn()">
+            RULES
+        </div>
+        <div class="Next" onclick="nextbtn()">
+            NEXT
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------------------------------------------------------------------- -->
+    
+    <script src="./index.js"></script>
+</body>
+</html>
+
+
+
